@@ -1,0 +1,767 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Lekton&family=Poppins:wght@100;200&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#index {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "inicio" "sobreMi" "portfolio" "testimonios" "contacto" "footer";
+}
+
+/* DECLARACION DE AREAS */
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+section#inicio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: inicio;
+}
+
+main, section#sobreMi {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: sobreMi;
+}
+
+main, section#portfolio {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: portfolio;
+}
+
+section#testimonios {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: testimonios;
+}
+
+section#contacto {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: contacto;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+/* GENERALES */
+h1 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+header {
+  background-color: white;
+  padding: 0.5em 0;
+}
+
+.nav-item {
+  padding: 0 0.5em;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler i {
+  color: #fbade6;
+}
+
+#inicio {
+  background-color: #fffaf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5em;
+}
+
+#inicio p {
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+}
+
+#sobreMi {
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em;
+}
+
+#portfolio {
+  background-color: #fffaf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em;
+}
+
+.portfolio {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio img {
+  border-radius: 5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio li {
+  list-style-type: none;
+}
+
+.portfolio li a {
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.portfolio li a div {
+  color: black;
+  text-align: center;
+}
+
+#testimonios {
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em;
+}
+
+#testimonios p {
+  text-align: center;
+}
+
+#contacto {
+  background-image: url(../img/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5em;
+}
+
+.btn {
+  color: black;
+  background-color: #fbade6;
+  border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: white;
+}
+
+footer div a {
+  text-decoration: none;
+  color: black;
+}
+
+footer div a p {
+  color: black;
+}
+
+footer div a i {
+  color: black;
+}
+
+#secciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: secciones;
+  padding-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#secciones p {
+  text-align: center;
+  padding-top: 1em;
+}
+
+#secciones li {
+  list-style-type: none;
+  font-size: 2em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+#secciones li a {
+  text-decoration: none;
+  border-radius: 5em;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 0 0.5em;
+}
+
+#secciones li a:hover {
+  background-color: black;
+  color: white;
+}
+
+#grilla {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "secciones" "footer";
+}
+
+/* maps (en portfolio) */
+.txt--bodas {
+  background-color: #e0f580;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+  padding: 10px;
+}
+
+.txt--books {
+  background-color: #7dc168;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+  padding: 10px;
+}
+
+.txt--quince {
+  background-color: #e490d9;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+  padding: 10px;
+}
+
+.txt--sociales {
+  background-color: #97d3f6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-align: center;
+  padding: 10px;
+}
+
+/* extend (en sobre mi) */
+.texto, .texto--ig, .texto--tiktok, .texto--mail {
+  font-size: medium;
+  background-color: #7dc168;
+}
+
+.texto--ig {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+}
+
+.texto--tiktok {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.texto--mail {
+  text-align: right;
+  background-color: #e0f580;
+}
+
+/* mixin (en testimonios) */
+.mixin {
+  font-size: 20px;
+  background-color: #e0f580;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  /* GENERALES */
+  h1 {
+    font-size: 4em;
+  }
+  .subtitle {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  /* HEADER */
+  .dropdown-menu {
+    font-size: 1em;
+  }
+  /* SECCION INCIO */
+  #inicio p {
+    font-size: 2em;
+    padding-top: 2em;
+  }
+  /* SECCION SOBRE MI */
+  .sobreMi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2em;
+  }
+  .sobreMi p {
+    font-size: 2em;
+    text-align: center;
+  }
+  .sobreMi figure {
+    text-align: center;
+  }
+  /* SECCION PORTFOLIO */
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 5em;
+  }
+  .portfolio img {
+    width: 10em;
+    height: 10em;
+  }
+  /* SECCION TESTIMONIOS */
+  .testimonios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    row-gap: 3em;
+  }
+  .testimonios p {
+    font-size: 2em;
+  }
+  /* SECCION CONTACTO */
+  .contacto {
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* SECCION FOOTER */
+  footer {
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 0;
+  }
+  /* OTRAS SECCIONES */
+  #secciones .fotos {
+    width: auto;
+    padding-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 5em;
+  }
+  #secciones p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px), (orientation: landscape) {
+  /* GENERALES */
+  h1 {
+    font-size: 4em;
+  }
+  .subtitle {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  /* HEADER */
+  .navbar {
+    font-size: 2em;
+  }
+  .dropdown-menu {
+    font-size: 1em;
+  }
+  .logo {
+    max-width: 50%;
+  }
+  /* SECCION INCIO */
+  #inicio p {
+    font-size: 2em;
+    padding-top: 2em;
+  }
+  /* SECCION SOBRE MI */
+  .sobreMi {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 4em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sobreMi p {
+    font-size: 2em;
+    text-align: center;
+  }
+  /* SECCION PORTFOLIO */
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    justify-items: center;
+    row-gap: 3em;
+  }
+  .portfolio img {
+    width: 8em;
+    height: 8em;
+  }
+  .portfolio div {
+    text-align: center;
+  }
+  /* SECCION TESTIMONIOS */
+  .testimonios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    row-gap: 3em;
+  }
+  .testimonios p {
+    font-size: 2em;
+  }
+  /* SECCION CONTACTO */
+  .contacto {
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* SECCION FOOTER */
+  footer {
+    text-align: center;
+    font-size: 2em;
+    padding: 2em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /* OTRAS SECCIONES */
+  #secciones .fotos {
+    width: auto;
+    padding-top: 8em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 5em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-items: center;
+  }
+  #secciones .fotos img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #secciones p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* GENERAL */
+  h1 {
+    font-size: 5em;
+  }
+  .subtitle {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  /* HEADER */
+  .navbar {
+    font-size: 2em;
+  }
+  .dropdown-menu {
+    font-size: 1em;
+  }
+  .logo {
+    max-width: 50%;
+  }
+  /* SECCION INICIO */
+  #inicio p {
+    font-size: 3em;
+    padding: 1em 0;
+  }
+  /* SECCION SOBRE MI */
+  .sobreMi {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 4em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sobreMi p {
+    font-size: 3em;
+    text-align: right;
+  }
+  /* SECCION PORTFOLIO */
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .portfolio img {
+    width: 8em;
+    height: 8em;
+  }
+  .portfolio li {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .portfolio li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  /* SECCION TESTIMONIOS */
+  .testimonios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35% auto 35%;
+        grid-template-columns: 35% auto 35%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonios p {
+    font-size: 3em;
+  }
+  /* SECCION CONTACTO */
+  .contacto {
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* SECCION FOOTER */
+  footer {
+    padding: 2em 10em 2em 10em;
+    text-align: center;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /* OTRAS SECCIONES */
+  #secciones .fotos {
+    padding-top: 8em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 5em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-items: center;
+  }
+  #secciones .fotos img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #secciones p {
+    font-size: 3em;
+  }
+}

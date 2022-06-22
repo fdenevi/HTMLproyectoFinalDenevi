@@ -1,0 +1,45 @@
+#secciones{
+    grid-area: secciones;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    li{
+        list-style-type: none;
+        font-size: 2em;
+        padding-top: 2em;
+        text-align: center;
+    
+        a{
+            text-decoration: none;
+            border-radius: 5em;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            padding: 0 0.5em;
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+        }
+    }
+}
+
+#grilla{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                        "header"
+                        "secciones"
+                        "footer";
+}

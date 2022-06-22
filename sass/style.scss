@@ -1,0 +1,367 @@
+@import "generales";
+@import "header";
+@import "inicio";
+@import "sobreMi";
+@import "portfolio";
+@import "testimonios";
+@import "contacto";
+@import "footer";
+@import "secciones";
+
+
+@media (max-width: 767px){
+
+    /* GENERALES */
+    h1{
+        font-size: 4em;
+    }
+    .subtitle{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    
+
+    /* HEADER */
+    .dropdown-menu{
+        font-size: 1em;
+    }
+
+
+    /* SECCION INCIO */
+    #inicio p{
+        font-size: 2em;
+        padding-top: 2em;
+    }
+
+
+    /* SECCION SOBRE MI */
+    .sobreMi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
+
+        p{
+            font-size: 2em;
+            text-align: center;
+        }
+        figure{
+            text-align: center;
+        }
+    }
+
+
+    /* SECCION PORTFOLIO */
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5em;
+        
+        img{
+            width: 10em;
+            height: 10em;
+        }
+    }
+
+
+    /* SECCION TESTIMONIOS */
+    .testimonios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        row-gap: 3em;
+
+        p{
+            font-size: 2em;
+        }
+    }
+
+
+    /* SECCION CONTACTO */
+    .contacto{
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* SECCION FOOTER */
+    footer{
+        text-align: center;
+        font-size: 1em;
+        padding: 2em 0;
+    }
+    
+    
+    /* OTRAS SECCIONES */
+    #secciones{
+        .fotos{
+            width: auto;
+            padding-top: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 5em;
+        }
+
+        p{
+            font-size: 2em;
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px), (orientation: landscape){
+    /* GENERALES */
+    h1{
+        font-size: 4em;
+    }
+    .subtitle{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 3em;
+    }
+
+    
+    /* HEADER */
+    .navbar{
+        font-size: 2em;
+    }
+    .dropdown-menu{
+        font-size: 1em;
+    }
+    .logo{
+        max-width: 50%;
+    }
+
+
+    /* SECCION INCIO */
+    #inicio p{
+        font-size: 2em;
+        padding-top: 2em;
+    }
+
+
+    /* SECCION SOBRE MI */
+    .sobreMi{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 1fr;
+        gap: 4em;
+        align-items: center;
+
+        p{
+        font-size: 2em;
+        text-align: center;
+        }
+    }
+
+
+    /* SECCION PORTFOLIO */
+    .portfolio{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        row-gap: 3em;
+
+        img{
+            width: 8em;
+            height: 8em;
+        }
+
+        div{
+            text-align: center;
+        }
+    }
+
+
+    /* SECCION TESTIMONIOS */
+    .testimonios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        row-gap: 3em;
+
+        p{
+            font-size: 2em;
+        }
+    }
+
+
+    /* SECCION CONTACTO */
+    .contacto{
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* SECCION FOOTER */
+    footer{
+        text-align: center;
+        font-size: 2em;
+        padding: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+    /* OTRAS SECCIONES */
+    #secciones{
+        .fotos{
+            width: auto;
+            padding-top: 8em;
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: auto;
+            align-items: center;
+            row-gap: 5em;
+            justify-content: space-around;
+            justify-items: center;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        p{
+            font-size: 2em;
+        }
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    /* GENERAL */
+    h1{
+        font-size: 5em;
+    }
+    .subtitle{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 4em;
+    }
+
+    /* HEADER */
+    .navbar{
+        font-size: 2em;
+    }
+    .dropdown-menu{
+        font-size: 1em;
+    }
+    .logo{
+        max-width: 50%;
+    }
+
+
+    /* SECCION INICIO */
+    #inicio p{
+        font-size: 3em;
+        padding: 1em 0;
+    }
+
+    /* SECCION SOBRE MI */
+    .sobreMi{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 1fr;
+        gap: 4em;
+        align-items: center;
+
+        p{
+            font-size: 3em;
+            text-align: right;
+        }
+    }
+
+
+    /* SECCION PORTFOLIO */
+    .portfolio{
+        display: flex;
+        justify-content: space-around;
+
+        img{
+            width: 8em;
+            height: 8em;
+        }
+
+        li{
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            
+            &:hover{
+                transform: scale(1.5)
+            }
+        }
+    }     
+
+
+    /* SECCION TESTIMONIOS */
+    .testimonios{
+        display: grid;
+        grid-template-columns: 35% auto 35%;
+        grid-template-rows: 1fr;
+        gap: 5em;
+        align-items: center;
+            p{
+                font-size: 3em;
+            }
+    }
+
+
+    /* SECCION CONTACTO */
+    .contacto{
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* SECCION FOOTER */
+    footer{
+        padding: 2em 10em 2em 10em;
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* OTRAS SECCIONES */
+    #secciones{
+        .fotos{
+            padding-top: 8em;
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: auto;
+            align-items: center;
+            row-gap: 5em;
+            justify-content: space-around;
+            justify-items: center;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        p{
+            font-size: 3em;
+        }
+    }
+}

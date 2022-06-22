@@ -1,0 +1,21 @@
+#contacto{
+    background-image: url(../img/contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;   
+    padding: 5em;
+}
+.btn{
+    color: black;
+    background-color: rgb(251, 173, 230);
+    border: none;
+    max-width: fit-content;
+    font-size: 1em;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
