@@ -314,70 +314,6 @@ footer div a i {
       grid-template-areas: "header" "secciones" "footer";
 }
 
-/* maps (en portfolio) */
-.txt--bodas {
-  background-color: #e0f580;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
-  text-align: center;
-  padding: 10px;
-}
-
-.txt--books {
-  background-color: #7dc168;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
-  text-align: center;
-  padding: 10px;
-}
-
-.txt--quince {
-  background-color: #e490d9;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
-  text-align: center;
-  padding: 10px;
-}
-
-.txt--sociales {
-  background-color: #97d3f6;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
-  text-align: center;
-  padding: 10px;
-}
-
-/* extend (en sobre mi) */
-.texto, .texto--ig, .texto--tiktok, .texto--mail {
-  font-size: medium;
-  background-color: #7dc168;
-}
-
-.texto--ig {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  border-style: solid;
-  border-color: black;
-}
-
-.texto--tiktok {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-}
-
-.texto--mail {
-  text-align: right;
-  background-color: #e0f580;
-}
-
-/* mixin (en testimonios) */
-.mixin {
-  font-size: 20px;
-  background-color: #e0f580;
-  text-align: center;
-  padding: 10px;
-}
-
 @media (max-width: 767px) {
   /* GENERALES */
   h1 {
