@@ -6,6 +6,13 @@
     display: flex;
     flex-direction: column;   
     padding: 5em;
+
+    .emoji{
+        text-align: center;
+        font-size: 4em;
+        margin-top: -1em;
+        padding-bottom: 1em;
+    }
 }
 .btn{
     color: black;

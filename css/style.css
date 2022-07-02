@@ -164,6 +164,10 @@ header {
   padding: 5em;
 }
 
+#portfolio p {
+  text-align: center;
+}
+
 .portfolio {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -192,6 +196,10 @@ header {
 
 #testimonios {
   background-color: antiquewhite;
+  background-image: url(../img/quotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +235,13 @@ header {
   padding: 5em;
 }
 
+#contacto .emoji {
+  text-align: center;
+  font-size: 4em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
 .btn {
   color: black;
   background-color: #fbade6;
@@ -244,6 +259,18 @@ header {
 
 footer {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2em;
+}
+
+footer p {
+  text-align: center;
 }
 
 footer div a {
@@ -281,6 +308,11 @@ footer div a i {
   padding-top: 1em;
 }
 
+#secciones img {
+  max-width: 100%;
+  height: auto;
+}
+
 #secciones li {
   list-style-type: none;
   font-size: 2em;
@@ -303,10 +335,10 @@ footer div a i {
 }
 
 #grilla {
-  width: 100%;
-  height: auto;
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: auto;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   -ms-grid-rows: auto;
@@ -356,7 +388,11 @@ footer div a i {
     text-align: center;
   }
   /* SECCION PORTFOLIO */
-  .portfolio {
+  #portfolio p {
+    font-size: 2em;
+    padding-top: 2em;
+  }
+  #portfolio .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -372,7 +408,7 @@ footer div a i {
             justify-content: center;
     row-gap: 5em;
   }
-  .portfolio img {
+  #portfolio .portfolio img {
     width: 10em;
     height: 10em;
   }
@@ -407,14 +443,27 @@ footer div a i {
   }
   /* SECCION FOOTER */
   footer {
+    padding: 2em 6em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
+  }
+  footer .footer {
+    font-size: 1.5em;
+  }
+  footer div a {
     font-size: 1em;
-    padding: 2em 0;
   }
   /* OTRAS SECCIONES */
+  #secciones {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #secciones .fotos {
-    width: auto;
-    padding-top: 5em;
+    width: 100%;
+    padding: 5em 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,7 +525,11 @@ footer div a i {
     text-align: center;
   }
   /* SECCION PORTFOLIO */
-  .portfolio {
+  #portfolio p {
+    font-size: 2.5em;
+    padding-top: 2.5em;
+  }
+  #portfolio .portfolio {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
@@ -486,11 +539,11 @@ footer div a i {
     justify-items: center;
     row-gap: 3em;
   }
-  .portfolio img {
+  #portfolio .portfolio img {
     width: 8em;
     height: 8em;
   }
-  .portfolio div {
+  #portfolio .portfolio div {
     text-align: center;
   }
   /* SECCION TESTIMONIOS */
@@ -524,15 +577,23 @@ footer div a i {
   }
   /* SECCION FOOTER */
   footer {
+    padding: 2em 10em;
     text-align: center;
-    font-size: 2em;
-    padding: 2em 0;
+  }
+  footer .footer {
+    font-size: 3em;
+    padding: 0 2em;
+  }
+  footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  footer div a {
+    font-size: 2em;
   }
   /* OTRAS SECCIONES */
   #secciones .fotos {
@@ -574,6 +635,9 @@ footer div a i {
   h2 {
     font-size: 4em;
   }
+  .contacto {
+    font-size: 4em;
+  }
   /* HEADER */
   .navbar {
     font-size: 2em;
@@ -607,18 +671,22 @@ footer div a i {
     text-align: right;
   }
   /* SECCION PORTFOLIO */
-  .portfolio {
+  #portfolio p {
+    font-size: 3em;
+    padding: 2em 4em 0em 4em;
+  }
+  #portfolio .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .portfolio img {
+  #portfolio .portfolio img {
     width: 8em;
     height: 8em;
   }
-  .portfolio li {
+  #portfolio .portfolio li {
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 1s;
@@ -628,7 +696,7 @@ footer div a i {
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
   }
-  .portfolio li:hover {
+  #portfolio .portfolio li:hover {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
@@ -664,15 +732,28 @@ footer div a i {
   }
   /* SECCION FOOTER */
   footer {
-    padding: 2em 10em 2em 10em;
+    padding: 2em 10em;
     text-align: center;
-    font-size: 2em;
+  }
+  footer .footer {
+    font-size: 3em;
+    padding: 0 5em;
+  }
+  footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  footer div a {
+    font-size: 2em;
+    cursor: pointer;
+  }
+  footer div a:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   /* OTRAS SECCIONES */
   #secciones .fotos {
@@ -692,7 +773,6 @@ footer div a i {
     justify-items: center;
   }
   #secciones .fotos img {
-    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;

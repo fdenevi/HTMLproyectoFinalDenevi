@@ -1,5 +1,12 @@
 footer{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    p{
+        text-align: center;
+    }
 
     div a{
         text-decoration: none;
