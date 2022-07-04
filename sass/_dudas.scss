@@ -1,0 +1,119 @@
+#dudasFlex{
+    grid-area: dudas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 250, 245);
+    padding: 5em;
+
+    p{
+    text-align: center;
+    margin: 0;
+    }
+
+    .op{
+        .op1{
+            background-color: rgb(195, 195, 195);
+            max-width: 20em;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            padding: 2em;
+            border-radius: 1em;
+            text-align: center;
+            row-gap: 1em;
+        }
+        .op2{
+            background-color: antiquewhite;
+            max-width: 20em;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2em;
+            border-radius: 1em;
+            text-align: center;
+            row-gap: 1em;
+        }
+        .op3{
+            background-color: rgb(195, 195, 195);
+            max-width: 20em;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2em;
+            border-radius: 1em;
+            text-align: center;
+            row-gap: 1em;
+        }
+
+        h3{
+            font-weight: bold;
+        }
+
+        .precio{
+            font-weight: bold;
+        }
+    }
+
+    .opP{
+        font-style: italic;
+        padding-top: 2em;
+    }
+
+    .pago{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
+
+        .descuento{
+            background-color: red;
+            width: fit-content;
+            color: white;
+            padding: 2em;
+            border-radius: 1em;
+    
+            p{
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .atras{
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: 3em;
+        text-align: center;
+    
+        a{
+            border-radius: 5em;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            padding: 0 0.5em;
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+        }
+    }
+}
+
+#dudas{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                        "header"
+                        "dudas"
+                        "footer";
+}

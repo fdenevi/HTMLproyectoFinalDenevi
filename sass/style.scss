@@ -7,6 +7,7 @@
 @import "contacto";
 @import "footer";
 @import "secciones";
+@import "dudas";
 
 
 @media (max-width: 767px){
@@ -24,9 +25,9 @@
     
 
     /* HEADER */
-        .dropdown-menu{
-            font-size: 1em;
-        }
+    .dropdown-menu{
+        font-size: 1em;
+    }
 
 
     /* SECCION INCIO */
@@ -90,24 +91,35 @@
 
 
     /* SECCION CONTACTO */
-    .contacto{
-        font-size: 2em;
-        display: flex;
-        flex-direction: column;
+    #contacto{
+        .dudas{
+            p{
+                font-size: 2em;
+            }
+            a{
+                font-size: 1.5em;
+            }
+        }
+
+        .contacto{
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 
     /* SECCION FOOTER */
     footer{
-        padding: 2em 6em;
-        align-items: center;
-        text-align: center;
-
         .footer{
             font-size: 1.5em;
         }
 
         div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2em;
             a{
                 font-size: 1em;
             }
@@ -130,6 +142,24 @@
 
         p{
             font-size: 2em;
+        }
+    }
+
+
+    /* DUDAS */
+    #dudasFlex{
+        p{
+            font-size: 2em;
+        }
+
+        .op{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2em;
+            h3{
+                font-size: 2em;
+            }
         }
     }
 }
@@ -223,27 +253,33 @@
 
 
     /* SECCION CONTACTO */
-    .contacto{
-        font-size: 2em;
-        display: flex;
-        flex-direction: column;
+    #contacto{
+        .dudas{
+            p{
+                font-size: 2em;
+            }
+            a{
+                font-size: 2em;
+            }
+        }
+
+        .contacto{
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 
     /* SECCION FOOTER */
     footer{
-        padding: 2em 10em;
-        text-align: center;
-
         .footer{
-            font-size: 3em;
-            padding: 0 2em;
+            font-size: 2em;
         }
 
         div{
             display: flex;
             justify-content: space-evenly;
-
             a{
                 font-size: 2em;
             }
@@ -273,6 +309,23 @@
 
         p{
             font-size: 2em;
+        }
+    }
+
+
+    /* DUDAS */
+    #dudasFlex{
+        p{
+            font-size: 2em;
+        }
+
+        .op{
+            display: flex;
+            justify-content: space-evenly;
+            
+            h3{
+                font-size: 2em;
+            }
         }
     }
 }
@@ -331,7 +384,7 @@
     #portfolio{
         p{
             font-size: 3em;
-            padding: 2em 4em 0em 4em;
+            padding: 2em 5em 0em 5em;
         }
 
         .portfolio{
@@ -371,22 +424,31 @@
 
 
     /* SECCION CONTACTO */
-    .contacto{
-        font-size: 2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    #contacto{
+        .dudas{
+            p{
+                font-size: 3em;
+            }
+            a{
+                font-size: 2em;
+            }
+        }
+
+        .contacto{
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        }
 
 
     /* SECCION FOOTER */
     footer{
-        padding: 2em 10em;
         text-align: center;
 
         .footer{
-            font-size: 3em;
-            padding: 0 5em;
+            font-size: 2.5em;
         }
 
         div{
@@ -402,6 +464,7 @@
             }
         }
     }
+
 
     /* OTRAS SECCIONES */
     #secciones{
@@ -422,6 +485,28 @@
         }
 
         p{
+            font-size: 3em;
+        }
+    }
+
+
+    /* DUDAS */
+    #dudasFlex{
+        p{
+            font-size: 3em;
+        }
+
+        .op{
+            h3{
+                font-size: 3em;
+            }
+
+            .precio{
+                font-size: 4em;
+            }
+        }
+
+        .atras{
             font-size: 3em;
         }
     }

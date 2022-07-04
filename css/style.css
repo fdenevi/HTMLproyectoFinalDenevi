@@ -87,9 +87,13 @@ h2 {
   padding-top: 2em;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: white;
-  padding: 0.5em 0;
+  padding: 0.5em 3em;
 }
 
 .nav-item {
@@ -185,7 +189,6 @@ header {
 }
 
 .portfolio li a {
-  text-decoration: none;
   font-size: 2em;
 }
 
@@ -242,7 +245,7 @@ header {
   padding-bottom: 1em;
 }
 
-.btn {
+#contacto .btn {
   color: black;
   background-color: #fbade6;
   border: none;
@@ -252,8 +255,61 @@ header {
   font-size: 1em;
 }
 
-.btn:hover {
+#contacto .btn:hover {
   background-color: black;
+  color: white;
+}
+
+#contacto .contacto {
+  padding: 1em 0;
+}
+
+#contacto .dudas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contacto .dudas div {
+  background-color: #c3c3c3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1em;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#contacto .dudas div p {
+  padding: 0 1em;
+}
+
+#contacto .dudas div .btn {
+  background-color: antiquewhite;
+}
+
+#contacto .dudas div .btn a {
+  color: black;
+}
+
+#contacto .dudas div .btn:hover {
+  background-color: #fbade6;
   color: white;
 }
 
@@ -266,6 +322,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 2em 5em;
   row-gap: 2em;
 }
 
@@ -273,8 +330,11 @@ footer p {
   text-align: center;
 }
 
+footer div {
+  text-align: center;
+}
+
 footer div a {
-  text-decoration: none;
   color: black;
 }
 
@@ -290,7 +350,7 @@ footer div a i {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: secciones;
-  padding-top: 5em;
+  padding: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,15 +373,13 @@ footer div a i {
   height: auto;
 }
 
-#secciones li {
-  list-style-type: none;
+#secciones div {
   font-size: 2em;
   padding-top: 2em;
   text-align: center;
 }
 
-#secciones li a {
-  text-decoration: none;
+#secciones div a {
   border-radius: 5em;
   background-color: transparent;
   color: black;
@@ -329,7 +387,7 @@ footer div a i {
   padding: 0 0.5em;
 }
 
-#secciones li a:hover {
+#secciones div a:hover {
   background-color: black;
   color: white;
 }
@@ -344,6 +402,169 @@ footer div a i {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "header" "secciones" "footer";
+}
+
+#dudasFlex {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dudas;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fffaf5;
+  padding: 5em;
+}
+
+#dudasFlex p {
+  text-align: center;
+  margin: 0;
+}
+
+#dudasFlex .op .op1 {
+  background-color: #c3c3c3;
+  max-width: 20em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  row-gap: 1em;
+}
+
+#dudasFlex .op .op2 {
+  background-color: antiquewhite;
+  max-width: 20em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  row-gap: 1em;
+}
+
+#dudasFlex .op .op3 {
+  background-color: #c3c3c3;
+  max-width: 20em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  row-gap: 1em;
+}
+
+#dudasFlex .op h3 {
+  font-weight: bold;
+}
+
+#dudasFlex .op .precio {
+  font-weight: bold;
+}
+
+#dudasFlex .opP {
+  font-style: italic;
+  padding-top: 2em;
+}
+
+#dudasFlex .pago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2em;
+}
+
+#dudasFlex .pago .descuento {
+  background-color: red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+#dudasFlex .pago .descuento p {
+  font-weight: bolder;
+}
+
+#dudasFlex .atras {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 3em;
+  text-align: center;
+}
+
+#dudasFlex .atras a {
+  border-radius: 5em;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 0 0.5em;
+}
+
+#dudasFlex .atras a:hover {
+  background-color: black;
+  color: white;
+}
+
+#dudas {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "header" "dudas" "footer";
 }
 
 @media (max-width: 767px) {
@@ -431,7 +652,13 @@ footer div a i {
     font-size: 2em;
   }
   /* SECCION CONTACTO */
-  .contacto {
+  #contacto .dudas p {
+    font-size: 2em;
+  }
+  #contacto .dudas a {
+    font-size: 1.5em;
+  }
+  #contacto .contacto {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,15 +669,21 @@ footer div a i {
             flex-direction: column;
   }
   /* SECCION FOOTER */
-  footer {
-    padding: 2em 6em;
+  footer .footer {
+    font-size: 1.5em;
+  }
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-  }
-  footer .footer {
-    font-size: 1.5em;
+    row-gap: 2em;
   }
   footer div a {
     font-size: 1em;
@@ -477,6 +710,26 @@ footer div a i {
     row-gap: 5em;
   }
   #secciones p {
+    font-size: 2em;
+  }
+  /* DUDAS */
+  #dudasFlex p {
+    font-size: 2em;
+  }
+  #dudasFlex .op {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2em;
+  }
+  #dudasFlex .op h3 {
     font-size: 2em;
   }
 }
@@ -565,7 +818,13 @@ footer div a i {
     font-size: 2em;
   }
   /* SECCION CONTACTO */
-  .contacto {
+  #contacto .dudas p {
+    font-size: 2em;
+  }
+  #contacto .dudas a {
+    font-size: 2em;
+  }
+  #contacto .contacto {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -576,13 +835,8 @@ footer div a i {
             flex-direction: column;
   }
   /* SECCION FOOTER */
-  footer {
-    padding: 2em 10em;
-    text-align: center;
-  }
   footer .footer {
-    font-size: 3em;
-    padding: 0 2em;
+    font-size: 2em;
   }
   footer div {
     display: -webkit-box;
@@ -620,6 +874,21 @@ footer div a i {
        object-fit: cover;
   }
   #secciones p {
+    font-size: 2em;
+  }
+  /* DUDAS */
+  #dudasFlex p {
+    font-size: 2em;
+  }
+  #dudasFlex .op {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #dudasFlex .op h3 {
     font-size: 2em;
   }
 }
@@ -673,7 +942,7 @@ footer div a i {
   /* SECCION PORTFOLIO */
   #portfolio p {
     font-size: 3em;
-    padding: 2em 4em 0em 4em;
+    padding: 2em 5em 0em 5em;
   }
   #portfolio .portfolio {
     display: -webkit-box;
@@ -717,7 +986,13 @@ footer div a i {
     font-size: 3em;
   }
   /* SECCION CONTACTO */
-  .contacto {
+  #contacto .dudas p {
+    font-size: 3em;
+  }
+  #contacto .dudas a {
+    font-size: 2em;
+  }
+  #contacto .contacto {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -732,12 +1007,10 @@ footer div a i {
   }
   /* SECCION FOOTER */
   footer {
-    padding: 2em 10em;
     text-align: center;
   }
   footer .footer {
-    font-size: 3em;
-    padding: 0 5em;
+    font-size: 2.5em;
   }
   footer div {
     display: -webkit-box;
@@ -778,6 +1051,19 @@ footer div a i {
        object-fit: cover;
   }
   #secciones p {
+    font-size: 3em;
+  }
+  /* DUDAS */
+  #dudasFlex p {
+    font-size: 3em;
+  }
+  #dudasFlex .op h3 {
+    font-size: 3em;
+  }
+  #dudasFlex .op .precio {
+    font-size: 4em;
+  }
+  #dudasFlex .atras {
     font-size: 3em;
   }
 }

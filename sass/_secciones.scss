@@ -1,6 +1,6 @@
 #secciones{
     grid-area: secciones;
-    padding-top: 5em;
+    padding: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,14 +15,12 @@
         height: auto;
     }
 
-    li{
-        list-style-type: none;
+    div{
         font-size: 2em;
         padding-top: 2em;
         text-align: center;
     
         a{
-            text-decoration: none;
             border-radius: 5em;
             background-color: transparent;
             color: black;
